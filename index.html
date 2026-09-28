@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="sidebar">
+        <h2 class="logo">My Portfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hello Everyone</h1>
+                <p>Weaavver Online Portfolio</p>
+                <a href="#projects" class="btn">View my projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profilePicture.png" alt="Profile picture">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Information Technology student from Pambayang Dalubhasaan ng Marilao, I enjoy playing roguelike games and I like low-level programs.
+            </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>C</li>
+                <li>Vercel</li>
+		<li>C#</li>
+		<li>ASM x86&x64</li>
+            </ul>
+        </section>
+	
+        <section id="projects" class="projects">
+            <h2>My Activities</h2>
+            <p class="section-note">Click a picture to view it larger. Final Activity cards open the live page in a new tab.</p>
+
+            <div class="gallery">
+
+                <figure>
+                    <img src="images/act1.png" alt="Laboratory Activity 1">
+                    <figcaption>
+                        <h3>Laboratory Activity 1</h3>
+                        <p>Purely HTML code.</p>
+                        <a href="midterm/Malbarosa-BSIT31A/unit25/MalbarosaEM%20Personal%20Website/index.html" target="_blank" rel="noopener">Open page &#8599;</a>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/act2.png" alt="Laboratory Activity 2">
+                    <figcaption>
+                        <h3>Laboratory Activity 2</h3>
+                        <p>Website with forms and tables created using HTML and CSS.</p>
+                        <a href="midterm/Midterm%20Act%203/MalbarosaEIT31AAct3/Index.html" target="_blank" rel="noopener">Open page &#8599;</a>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/act3.png" alt="Laboratory Activity 3">
+                    <figcaption>
+                        <h3>Laboratory Activity 3</h3>
+                        <p>Introduction to transitions and external CSS.</p>
+                        <a href="midterm/Midterm%20Act%204/MalbarosaEActivity4/home.html" target="_blank" rel="noopener">Open page &#8599;</a>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/act4.png" alt="Laboratory Activity 4">
+                    <figcaption>
+                        <h3>Laboratory Activity 4</h3>
+                        <p>Simple Responsive Landing Page</p>
+                        <a href="midterm/Midterm%20Act%205/Malbarosa_Act5/index.html" target="_blank" rel="noopener">Open page &#8599;</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="link-card">
+                    <a href="finals/Activity 1 Finals/Malbarosa_Finals_Activity 1/index.html" target="_blank" rel="noopener" aria-label="Open Act1Fin in a new tab">
+                        <img src="images/act1fin.png" alt="Act1Fin">
+                    </a>
+                    <figcaption>
+                        <h3>Act1Fin</h3>
+                        <p>JavaScript events: click, double click, hover, focus and more. Opens in a new tab &#8599;</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="link-card">
+                    <a href="finals/Activity 5 Finals/MalbarosaFinals_Act2/index.html" target="_blank" rel="noopener" aria-label="Open Act2Fin in a new tab">
+                        <img src="images/act2fin.png" alt="Act2Fin">
+                    </a>
+                    <figcaption>
+                        <h3>Act2Fin</h3>
+                        <p>JavaScript Promises and promise chaining. Opens in a new tab &#8599;</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="link-card">
+                    <a href="finals/Activity 3 Finals/MalbarosaEM_FinalsAct3/index.html" target="_blank" rel="noopener" aria-label="Open Act3Fin in a new tab">
+                        <img src="images/act3fin.png" alt="Act3Fin">
+                    </a>
+                    <figcaption>
+                        <h3>Act3Fin</h3>
+                        <p>jQuery DOM manipulation, toggle effects and table formatting. Opens in a new tab &#8599;</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="link-card">
+                    <a href="finals/Activity 4 Finals/MalbarosaEM_FinalsAct4/index.html" target="_blank" rel="noopener" aria-label="Open Act4Fin in a new tab">
+                        <img src="images/act4fin.png" alt="Act4Fin">
+                    </a>
+                    <figcaption>
+                        <h3>Act4Fin</h3>
+                        <p>Asynchronous AJAX and XMLHttpRequest data loading. Opens in a new tab &#8599;</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: weaavver@gmail.com</p>
+            <p>Github: <a href="https://github.com/weaavver">weaavver</a></p>
+        </section>
+
+        <footer>
+            <p>© 2026 PDM Student | Student Portfolio</p>
+        </footer>
+
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close picture">&times;</button>
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = lightbox.querySelector('img');
+        const lbCap = lightbox.querySelector('.lightbox-caption');
+
+        document.querySelectorAll('.gallery figure:not(.link-card)').forEach(fig => {
+            fig.querySelector('img').addEventListener('click', () => {
+                const img = fig.querySelector('img');
+                lbImg.src = img.src;
+                lbImg.alt = img.alt;
+                lbCap.textContent = img.alt;
+                lightbox.classList.add('open');
+                lightbox.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+        }
+        lightbox.addEventListener('click', e => {
+            if (e.target !== lbImg) closeLightbox();
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+
+</html>

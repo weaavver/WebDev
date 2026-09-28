@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="homeHeader">
+        <h1>My Personal Website</h1>
+        <h3>Welcome to my Personal Student Portal</h3>
+    </header>
+
+    <nav class="homeNav">
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="Grades.html">Grade</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="formContainer">
+            <div class="RegistrationForm">
+                <h1>Registration Form</h1>
+                <p>Student name</p>
+                <input type="text" value="Enter name">
+                <p>Email</p>
+                <input type="text" value="Enter Email">
+                <p>Password</p>
+                <input type="password" name="password">
+                
+                <p>Gender</p>
+                Male<input type="radio" name="Male">
+                Female<input type="radio" name="Female">
+    
+                <p>Course</p>
+                <select name="dropdown" id="">
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSCS">BSIT</option>
+                    <option value="BSTM">BSIT</option>
+                    <option value="BSOAD">BSIT</option>
+                </select>
+    
+                <p>Skills</p>
+                <input type="checkbox" name="HTML" id="">HTML
+                <input type="checkbox" name="CSS" id="">CSS
+                <input type="checkbox" name="JavaScript" id="">JavaScript
+    
+                <p>Profile Picture</p>
+                <input type="file">
+    
+                <p>Address</p>
+                <textarea name="address" rows="5" cols="30"></textarea>
+                <br>
+                <input type="button" value="Submit" name="Submit">
+                <input type="button" value="Reset" name="Reset">
+            </div>
+        </div>
+    </article>
+
+
+    <footer>
+        <div class="footerContainer">
+            <h5>@ 2025 My Personal Website</h5>
+        </div>
+    </footer>
+</body>
+</html>

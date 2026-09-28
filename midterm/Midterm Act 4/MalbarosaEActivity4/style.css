@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 2px;
+}
+
+.homeHeader{
+    background-color: cyan;
+    text-align: center;
+}
+
+a:hover{
+    background-color: tomato;
+    transition: 0.5s;
+}
+
+.links{
+    background-color: pink;
+    font-size: large;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links li{
+    list-style: none;
+}
+
+.footerContainer{
+    background-color: springgreen;
+    height: 40px;
+    justify-items: center;
+    padding: 12px;
+    font-size: x-large;
+}
+
+.articleContainer{
+    background-color: beige;
+}
+
+.contentContainer{
+    display: flex;
+}
+
+.articleContainer{
+    width: 70%;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.announcementContainer{
+    width: 30%;
+    background-color: burlywood;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.announcementContainer li{
+    list-style: none;
+}
+
+.formContainer{
+    background-color: bisque;
+    justify-items: center;
+}
+
+.RegistrationForm{
+    border-radius: 15px;
+    padding: 50px;
+    background-color: white;
+    width: 500px;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.GradeTableContainer{
+    justify-items: center;
+}
+
+.MAINGradeTableContainer{
+    background-color: blanchedalmond;
+}
+
+.gradetable{
+    border:1px inset;
+    width: 1500px;
+}
+
+td{
+    padding: 12px;
+    background-color: bisque;
+    text-align: center;
+}
+
+th{
+    padding: 12px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
+.tdGrey{
+    background-color: gainsboro;
+}
+
+.profileMAINDiv{
+    padding: 15px;
+    display: flex;
+}
+
+.photocontainer{
+    background-color: aqua;
+    width: 20%;
+    border-radius: 15px;
+}
+
+.photo{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 100px;
+}
+
+.Info{
+    width: 80%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+
+

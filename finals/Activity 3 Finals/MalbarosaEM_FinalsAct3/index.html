@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src ="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<style>
+    body{
+        text-align: center;
+        margin-top: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: steelblue;
+    }
+
+    .card{
+        background-color: lightskyblue;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        border: solid 4px steelblue;
+    }
+    .innerCard{
+        background-color: azure;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    button{
+        font-size: large;
+        background-color: black;
+        color: white;
+        padding: 25px 25px;
+        border: none;
+        border-radius: 5px;
+    }
+    .innerCard2{
+        background-color: azure;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .innerCard3{
+        background-color: azure;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .innerCard4{
+        background-color: azure;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    table{
+        width: 50%;
+        border-collapse: collapse;
+        align-items: center;
+    }
+    th{
+        background-color: cornflowerblue;
+        color: white;
+        border-color: black;
+    }
+    td,th{
+        padding: 10px;
+        text-align: center;
+    }   
+    select{
+        font-size: larger;
+        background-color: aqua;
+        text-align: center;
+        padding: 5px;
+        width: 20%;
+        border-collapse: collapse;       
+        background-color: #ffffff;
+        font-size: 16px;
+    }
+    span{
+        font-weight: bold;
+    }
+    #Nani{
+        font-size: larger;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <h1 id="title">My Student Profile</h1>
+        <p>Welcome to my interactive profile!</p>
+        <div class="innerCard">
+            <h2>Student Information</h2>
+            <p>Name: Juan Dela Cruz</p>
+            <p id="courseText">Course: <span>BSIT</span></p>
+            <p>Year Level: 3rd Year</p>
+        </div>
+        <br>
+        <button id="changeTitle">Change Title</button>
+        <button id="hideProfile">Hide Profile</button>
+        <button id="showProfile">Show Profile</button>
+        <br><br>
+        <div class="innerCard2">
+            <h4 id="message">Output: </h4>
+        </div>
+        <br><br>
+        <h3>Choose Your Course</h3>
+        <select id="course">
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSTM">BSTM</option>
+            <option value="BSOAD">BSOAD</option>
+            <option value="BSEDUC">BSEDUC</option>
+            <option value="BSHM">BSHM</option>
+        </select>
+        <br><br>
+        <div class="innerCard3">
+            <h4 id="courseSelected">No course selected.</h4>
+        </div>
+        <br><br>
+
+        <h2>Student List</h2>
+        <p>Registered Students:</p>
+        <center>
+        <table border="1" id="table">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>BSCS</td>
+                <td>3rd Year</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pedro</td>
+                <td>BSIS</td>
+                <td>3rd Year</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ana</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+        </table>
+    </center>
+    <br><br>
+    <div class="innerCard4">
+        <h4>End of student list.</h4>
+    </div>
+    <br>
+    <br>
+    <button id="odd">Apply Odd Rows</button>
+    <button id="even">Apply Even Rows</button>
+    <button id="hideTable">Hide Table</button>
+    <button id="showTable">Show Table</button>
+    <br><br>
+    <p id="Nani">Message</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

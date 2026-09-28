@@ -1,0 +1,152 @@
+function showMessage(text){
+    message.innerHTML = text
+}
+
+Button.addEventListener("click", function(){
+    message.innerHTML = "Loading..."
+
+    setTimeout(function(){
+    showMessage("Welcome to Javascript!")
+    },2000)
+})
+
+
+
+
+
+
+function loadMessage(){
+    return new Promise(function(resolve,reject){
+        setTimeout(function(){
+            let success = false
+
+            if(success){
+                resolve("Welcome to PDM")
+            }
+            else{
+                reject("Failed to reach")
+            }
+        },2000)
+    })
+}
+
+Button.addEventListener("click", function(){
+    message.innerHTML = "Loading..."
+    loadMessage()
+
+    .then(function(result){
+        message.innerHTML = result
+    })
+
+    .catch(function(error){
+        message.innerHTML = error
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+function showMessage(){
+    return new Promise(function(resolve){
+        setTimeout(function(){
+            resolve("Checking Account...")
+        },2000)
+    })
+}
+
+Button.addEventListener("click",function(){
+    message.innerHTML = "Loading..." 
+    showMessage()
+
+    .then(function(result){
+        message.innerHTML = result //PRINTS "Checking Account..."
+
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                resolve("Loading Profile...")
+            }, 1000)
+        })
+    })
+    .then(function(result){
+        message.innerHTML = result //PRINTS "Loading Profile..."
+
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                resolve("Kahit ano")
+            }, 2000)
+        })
+        
+    })
+    .then(function(result){
+        message.innerHTML = result
+
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                resolve("asd")
+            }, 2000)
+        })
+        
+    })
+    .then(function(result){
+        setTimeout(function(){
+            message.innerHTML = result
+        }, 2000)
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const profilePromise = new Promise(function
+        (resolve){
+            setTimeout(function(){
+                profile.innerHTML = "Profile: Loaded";
+
+                resolve();
+                
+            },1000);
+    })
+
+    const gradesPromise = new Promise(function
+        (resolve){
+            setTimeout(function(){
+                grades.innerHTML = "Grades: Loaded";
+
+                resolve();
+                
+            },2000);
+    })
+
+    const schedulePromise = new Promise(function
+        (resolve){
+            setTimeout(function(){
+                schedule.innerHTML = "Schedule: Loaded";
+
+                resolve();
+                
+            },1000);
+    })
+
+    Promise.all([profilePromise, gradesPromise, schedulePromise])
+
+    .then(function(){
+
+    })
